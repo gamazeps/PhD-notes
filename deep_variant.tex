@@ -74,20 +74,6 @@ DOI: https://doi.org/10.1101/092890
 \end{frame}
 %---------------------------------------------------------
 
-\section{Note}
-\begin{frame}
-    \begin{itemize}
-     \item not sensible to alignment method
-     \item needs high sensitity and low specificity
-     \item can work without realignment
-     \item can work on different sequencers (using provided BAM)
-     \item no need for VQSR
-     \item works accross species and can be trained on species with more data (human and mice)
-     \item works accross sequencers (need ground truth but that's all)
-     \item opens door to transfer learning
-    \end{itemize}
-\end{frame}
-
 \section{Motivation}
 
 \begin{frame}
@@ -227,6 +213,7 @@ DOI: https://doi.org/10.1101/092890
     \begin{itemize}
         \item Inception v2.
         \item Pretrained on ImageNet.
+        \item Used DistBelief framework (to be replaced with TensorFlow).
     \end{itemize}
 \end{frame}
 
@@ -258,21 +245,81 @@ DOI: https://doi.org/10.1101/092890
         \item Used MGP data.
         \item Beats state of the art (F1: 98.29\% vs 97.84\%).
         \item Gets better results when trained on NA12878 than mouse genome.
+        \item Implies transfer learning accross species.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
     \frametitle{Evaluation on other sequencers}
 
+    Consistently beats other methods on
     \begin{itemize}
-        \item Used MGP data.
-        \item Beats state of the art (F1: 98.29\% vs 97.84\%).
-        \item Gets better results when trained on NA12878 than mouse genome.
+        \item Ion AmpliSeq exome
+        \item Illumina TruSeq Genome
+        \item 10x Chromium 75x WGS
+        \item PacBio raw reads 40x WGS
+        \item SOLID 85x
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Evaluation on other sequencers (cont)}
+
+    \begin{itemize}
+        \item Used realigned data from GiaB (local realignment was tuned for Illumina WGS).
+        \item Retrained the CNN on the data from the new sequencers.
+        \item Sugests that DeepVariant can learn on all sequencers.
+        \item Sugests that DeepVariant is not too sensible to realignment method.
     \end{itemize}
 \end{frame}
 
 \section{Promises of DeepVariant}
 
-\section{Annex: Inception v2 architecture}
+\begin{frame}
+    \frametitle{Proof of concept for Deep Learning}
+
+    \begin{itemize}
+        \item DeepVariant got best Fscore on FDA truth challenge.
+        \item Only team to use Deep Learning and beat state of the Art.
+        \item Suggests Deep Learning is an appropriate tool.
+        \item Model had no prior on genomic data and representation was suboptimal.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Opportunities}
+
+    \begin{itemize}
+        \item Transfer accross species opens the door for a unique caller for all species trained on
+            all species.
+        \item Retraining on different sequencing means that expert parameter tuning for each
+            sequencer might be a thing of the past.
+        \item Success in small variant calling migth be pushed to structural variants where state of
+            the art is more art than science.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Population genomics}
+
+    \begin{itemize}
+        \item Training a model on multiple samples teaches priors, which are the definition of
+            population genomics.
+        \item Model can be trained online with new incoming data, promising better performances as
+            time goes on.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Latency}
+
+    \begin{itemize}
+        \item Computation cost of the trained model are only dependent on the size of the image
+            (here 299x299px).
+        \item Deep Learning training methods are easily distributed (see DistBelief).
+        \item Main bottleneck are preprocessing and image creation (assumed).
+        \item Smaller models can be learned (see Distill).
+    \end{itemize}
+\end{frame}
 
 \end{document}
