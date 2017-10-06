@@ -8,8 +8,8 @@ This document is an overview of DeepVariant.
 
 Here is a schematic of the whole pipeline, the steps are detailed below.
 
-![Alt text](Images/DeepVariant_first_steps.jpg?raw=true "Pipeline part 1")
-![Alt text](Images/path/to/DeepVriant_last_steps.jpg?raw=true "Pipelin part 2")
+![Pipeline first steps](Images/DeepVariant_first_steps.jpg "Pipeline part 1")
+![Pipeline last steps](Images/path/to/DeepVariant_last_steps.jpg "Pipelin part 2")
 
 ### Preprocessing (steps 1-2)
 
