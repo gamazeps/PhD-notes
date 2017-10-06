@@ -9,7 +9,7 @@ This document is an overview of DeepVariant.
 Here is a schematic of the whole pipeline, the steps are detailed below.
 
 ![Pipeline first steps](Images/DeepVariant_first_steps.jpg "Pipeline part 1")
-![Pipeline last steps](Images/path/to/DeepVariant_last_steps.jpg "Pipelin part 2")
+![Pipeline last steps](Images//DeepVariant_last_steps.jpg "Pipeline part 2")
 
 ### Preprocessing (steps 1-2)
 
@@ -26,7 +26,7 @@ Here is a schematic of the whole pipeline, the steps are detailed below.
 - (step 5, 6) Filters the haplotypes based on:
     - read quality.
     - frequency of the variant.
-    - # appearnces of the variant.
+    - \# appearnces of the variant.
     - different from reference (no point in emitting reference).
 
 ### Image encoding (step 7)
