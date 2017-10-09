@@ -93,6 +93,10 @@ I believe that such a project has the following pros:
 - Arise interest in the problem of SV callers (before hopefuly bringing new results to this area ourselve).
 - Good follow-up on the training phase, as a researcher I will need to learn how to write papers.
 - Give us a deep understanding on the state of the art of SV calling.
+- Having a metric and an evaluation of each callers and pipelines would allow to make the marginal
+  gains of using more callers explicit, and thus allow to chose which callers to used and which not
+  to use together (by adding a correlation matrix ofr example), thus lowering the computational cost
+  for genome centers (by using less callers).
 
 ## References
 
