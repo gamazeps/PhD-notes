@@ -1,5 +1,4 @@
 # Ensemble methods for Structural variant calling
-------------------------------------------------
 
 As the Lin et al. paper mentions, there are currently a few big issues
 in structural variant calling pipelines.
@@ -13,8 +12,7 @@ A rough summary would be:
     different tools at that time though).
 -   Results of different tools are merged in a very much `ad hoc` way.
 
-What we can do here
--------------------
+## What we can do here
 
 The first two problems mentionned represent a lot of work and inovation
 in order to provide a better caller, I belive this is where our deep
@@ -29,8 +27,7 @@ On the other hand, the merging phase is in my opinion both doable in a
 reasonable amount of time, publishable (once again Avinash's input would
 be interesting here) and useful for the rest of the PhD.
 
-Merging callers
----------------
+## Merging callers
 
 Only four methods have been referenced as using mutiple callers and
 merging their results:
@@ -66,8 +63,7 @@ Such a system could be done by investigating various methods:
     areas of science.
 -   Sensor fusion, such as Kalman filters.
 
-Project description
--------------------
+## Project description
 
 Investigating these three methods would require us to also build an
 evaluation tool for structural variant caling, which is not exactly done
@@ -85,8 +81,7 @@ to evaluate our algorithms.
 Once such an evaluation strategy has been built, training a neural
 network to optimaly merge the signals would be an easy task.
 
-Work to be done
----------------
+## Work to be done
 
 -   Identify a quality annotated dataset for SV calling.
 -   Run the most common pipelines and callers on that single dataset.
@@ -101,8 +96,7 @@ well. The investigation should be doable in less than a month and the
 paper could be doable in a few weeks (as we would already have run the
 experiences).
 
-Project impact
---------------
+## Project impact
 
 I believe that such a project has the following pros:
 
@@ -123,8 +117,7 @@ I believe that such a project has the following pros:
     thus lowering the computational cost for genome centers (by using
     less callers).
 
-References
-----------
+## References
 
 Lin, Ke, Sandra Smit, Guusje Bonnema, Gabino Sanchez-Perez, and Dick de
 Ridder. “Making the Difference: Integrating Structural Variation
