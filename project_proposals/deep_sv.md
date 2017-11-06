@@ -36,6 +36,10 @@ variant data.
 |MEI        | 16.631       |
 |NUMT       | 168          |
 
+We will also need data for non SV data, for that we may use the strategy from svclassify and
+randomly sample locations from the reference genome as variants are rare (this can be improved by
+using regions where the alignment is almost perfect with just a few SNPs).
+
 ## Candidate emission
 
 Here we will follow aplly a preprocessing similar to that of PINDEL, DELLY and BreakDancer:
@@ -139,6 +143,10 @@ Sequence Classifications.” ArXiv:1605.01133 [Cs], May 3, 2016. http://arxiv.or
 Lanchantin, Jack, Ritambhara Singh, Beilun Wang, and Yanjun Qi. “Deep Motif Dashboard: Visualizing
 and Understanding Genomic Sequences Using Deep Neural Networks.” ArXiv:1608.03644 [Cs], August 11,
 2016. http://arxiv.org/abs/1608.03644.
+
+Parikh, Hemang, Hariharan Iyer, Desu Chen, Mark Pratt, Gabor Bartha, Noah Spies, Wolfgang Losert,
+Justin M. Zook, and Marc L. Salit. “Svclassify: A Method to Establish Benchmark Structural Variant
+Calls.” BioRxiv, May 22, 2015, 019372. https://doi.org/10.1101/019372.
 
 Poplin, Ryan, Dan Newburger, Jojo Dijamco, Nam Nguyen, Dion Loy, Sam Gross, Cory Y. McLean, and Mark
 DePristo. “Creating a Universal SNP and Small Indel Variant Caller with Deep Neural Networks.”
