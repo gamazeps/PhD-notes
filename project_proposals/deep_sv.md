@@ -123,4 +123,37 @@ This method suffers from the following drawbacks:
 - The way to chose the size of the window is not defined and this is most likely a very important
   factor.
 
-## References: TBD
+## References
+
+Alipanahi, Babak, Andrew Delong, Matthew T. Weirauch, and Brendan J. Frey. “Predicting the Sequence
+Specificities of DNA- and RNA-Binding Proteins by Deep Learning.” Nature Biotechnology 33, no. 8
+(August 2015): 831–38. https://doi.org/10.1038/nbt.3300.
+
+Chen, Ken, John W. Wallis, Michael D. McLellan, David E. Larson, Joelle M. Kalicki, Craig S. Pohl,
+Sean D. McGrath, et al. “BreakDancer: An Algorithm for High Resolution Mapping of Genomic Structural
+Variation.” Nature Methods 6, no. 9 (September 2009): 677–81. https://doi.org/10.1038/nmeth.1363.
+
+Lanchantin, Jack, Ritambhara Singh, Zeming Lin, and Yanjun Qi. “Deep Motif: Visualizing Genomic
+Sequence Classifications.” ArXiv:1605.01133 [Cs], May 3, 2016. http://arxiv.org/abs/1605.01133.
+
+Lanchantin, Jack, Ritambhara Singh, Beilun Wang, and Yanjun Qi. “Deep Motif Dashboard: Visualizing
+and Understanding Genomic Sequences Using Deep Neural Networks.” ArXiv:1608.03644 [Cs], August 11,
+2016. http://arxiv.org/abs/1608.03644.
+
+Poplin, Ryan, Dan Newburger, Jojo Dijamco, Nam Nguyen, Dion Loy, Sam Gross, Cory Y. McLean, and Mark
+DePristo. “Creating a Universal SNP and Small Indel Variant Caller with Deep Neural Networks.”
+BioRxiv, December 14, 2016, 092890. https://doi.org/10.1101/092890.
+
+Rausch, Tobias, Thomas Zichner, Andreas Schlattl, Adrian M. Stütz, Vladimir Benes, and Jan O.
+Korbel. “DELLY: Structural Variant Discovery by Integrated Paired-End and Split-Read Analysis.”
+Bioinformatics (Oxford, England) 28, no. 18 (September 15, 2012): i333–39.
+https://doi.org/10.1093/bioinformatics/bts378.
+
+Sudmant, Peter H., Tobias Rausch, Eugene J. Gardner, Robert E. Handsaker, Alexej Abyzov, John
+Huddleston, Yan Zhang, et al. “An Integrated Map of Structural Variation in 2,504 Human Genomes.”
+Nature 526, no. 7571 (October 1, 2015): 75–81. https://doi.org/10.1038/nature15394.
+
+Ye, Kai, Marcel H. Schulz, Quan Long, Rolf Apweiler, and Zemin Ning. “Pindel: A Pattern Growth
+Approach to Detect Break Points of Large Deletions and Medium Sized Insertions from Paired-End Short
+Reads.” Bioinformatics (Oxford, England) 25, no. 21 (November 1, 2009): 2865–71.
+https://doi.org/10.1093/bioinformatics/btp394.
