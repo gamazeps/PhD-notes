@@ -8,7 +8,7 @@ Each layer will be described as layer l, with layer 0 being the input.
 
 For each layer we will have the following:
 
-- $z^{l-1}$: input vector of layer l
+- $$z^{l-1}$$: input vector of layer l
 - $\theta^{l}$: parameters of layer l
 - $z^{l}$: output vector of layer l
 
